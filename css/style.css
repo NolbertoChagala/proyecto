@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-color:#96B5A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+body .links{
+    list-style: none;
+}
+body li{
+    display: inline-block;
+    padding: 0 10px;
+}
+body li:hover{
+    transform: scale(1.1);
+}
+body a{
+    font-size: 700;
+    color:#eceff1;
+    text-decoration: none;
+
+}
+body a:hover{
+    color: #aef696;;
+}
+input.busquedad{
+    border-radius:10px;
+    width: 20cm;
+    height: 1cm;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul {
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    /*padding top right bottom left*/
+    padding:0 7%;
+    align-items: center;
+
+}
+h2{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.cadenas{
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;    
+    display: flex;
+    
+}
+form{
+    background-color: #8EC680;
+    width: 40%;
+    padding: 10px;
+    border-radius: .4rem;
+}
+.btn{
+    width: 100%;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:#668a5d ;
+    font-weight: bold;
+}
+img{
+    width: 10%;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+.metodos{
+    display: inline-flex;
+    width: 38%;
+}
+
+footer{
+    background: #96b5a6;
+    padding: 30px;
+    text-align: center;
+    color:#ffffff;
+    margin-top: 30px;
+}

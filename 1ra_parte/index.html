@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .imagenes {
+      position: relative;
+      width: 100%; 
+      height: 300px; 
+      overflow: hidden;
+      
+      
+    }
+
+    .imagenes img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease-in-out;
+      
+      
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      margin-right: 15%;
+      margin-top: 5%;
+    }
+
+    .image {
+      width: 200px;
+      height: 150px;
+      margin-right: 2%;
+      margin-left: 15%;
+      margin-top: 2%;
+    }
+
+    .container_2 {
+      display: flex;
+      align-items: center;
+      margin-left: 15%;
+      margin-top: 5%;
+    }
+
+    .image_2 {
+      width: 200px;
+      height: 300px;
+      margin-left: 2%;
+      margin-right: 15%;
+      margin-top: 2%;
+    }
+
+
+  </style>
+  <title>Veterinaria Peso Pluma</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <header class="header">
+      <div class="logo">
+          <img src="images/logo.png" alt="Logo de la tienda.">
+      </div>
+      <div class="busqueda">
+          <input type=" text" placeholder="Buscar">
+      </div>
+      <div class="perfil_carrito">
+          <img src="images/carrito_compra.png" alt="">
+          <a href="/contactos.html"><img src="images/usuario.png" alt=""></a>
+      </div>
+  </header>
+  <nav>
+      <ul class="links">
+          <li><a href="/1ra_parte/index.html">INICIO</a></li>
+          <li><a href="/1ra_parte/categorias.html">CATEGORIAS</a></li>
+          <li><a href="/carrito/Quienes_somos.html">NOSOTROS</a></li>
+          <li><a href="/1ra_parte/contactanos.html">CONTACTO</a></li>
+      </ul>
+  </nav>
+
+  
+  <div class="imagenes">
+    <img src="images/imagen 1.jpg" alt="Imagen 1">
+    <img src="images/imagen 2.jpg" alt="Imagen 2">
+    <img src="images/imagen 3.jpg" alt="Imagen 3">
+  </div>
+
+  <div class="container">
+    <img class="image" src="images/imagen 1.jpg" alt="imagen principal">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+    </p>
+  </div>
+
+  <div class="container_2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus nunc suscipit. Sed facilisis nunc in lacus gravida, id interdum arcu feugiat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mi at mauris fringilla convallis. Donec faucibus magna at sem tincidunt, eget cursus 
+</p>
+    <img class="image_2" src="images/imagen 1.jpg" alt="imagen principal">
+    
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.imagenes img');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      images[currentIndex].style.opacity = 0;
+
+      currentIndex = (currentIndex + 1) % images.length;
+
+      images[currentIndex].style.opacity = 1;
+    }, 3000); // Cambia el valor 3000 para ajustar la velocidad de desplazamiento (en milisegundos)
+  </script>
+
+
+
+ 
+
+
+<footer>Todos los derechos reservados | SM33</footer>
+</body>
+</html>
+
